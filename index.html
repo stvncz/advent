@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Surprise du 2 décembre</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Surprise du jour 🎁</h1>
+
+      <div class="calendar">
+        <!-- Conteneur porte + contenu -->
+        <div class="card">
+          <!-- PORTE -->
+          <div class="door" id="door">
+            <span class="number">2</span>
+          </div>
+
+          <!-- CONTENU FIXE DERRIÈRE LA PORTE -->
+          <div class="inside">
+            <!-- ÉNIGME -->
+            <div id="riddle">
+              <p class="riddle-text">
+                Pour dévoiler la surprise, devine le mot de passe.<br />
+                <strong>Indice :</strong> “BDM 2023”
+              </p>
+
+              <input id="answer" type="text" />
+              <button id="validate">Valider</button>
+            </div>
+
+            <!-- IMAGE 
+          <div id="photoContainer" class="hidden">
+            <img src="assets/surprise.gif" alt="Surprise animée" class="photo" />
+          </div>
+          -->
+            <video
+              id="video"
+              class="photo"
+              class="hidden"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source src="assets/surprise.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
