@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Surprise du 4 décembre</title>
+    <title>Surprise du 10 décembre</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,7 +14,7 @@
         <div class="card">
           <!-- PORTE -->
           <div class="door" id="door">
-            <span class="number">4</span>
+            <span class="number">10</span>
           </div>
 
           <!-- CONTENU FIXE DERRIÈRE LA PORTE -->
@@ -22,17 +22,22 @@
             <!-- ÉNIGME -->
             <div id="riddle">
               <p class="riddle-text">
-                Aujourd'hui petit blindtest mélodie ! 🎹🎶<br />
+                Pour se replonger dans de doux souvenirs<br />
               </p>
-              <div class="video-wrapper">
-                <video id="video" controls autoplay loop playsinline>
-                  <source src="assets/blindtest.mp4" type="video/mp4" />
-                </video>
+              <div class="gallery">
+                <button class="nav prev" id="prevBtn">‹</button>
+
+                <img
+                  id="galleryImage"
+                  src="images/image.png"
+                  alt="Gallery photo"
+                />
+                <p id="caption" class="caption"></p>
+
+
+                <button class="nav next" id="nextBtn">›</button>
               </div>
-              <input type="text" id="answer" placeholder="Ta réponse…" />
-              <button id="validate">Valider</button>
             </div>
-            <div id="confettis"></div>
           </div>
         </div>
       </div>
