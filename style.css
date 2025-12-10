@@ -27,6 +27,16 @@ h1 {
   perspective: 1000px;
 }
 
+/* Sur mobile (écran <= 480px) */
+@media (max-width: 480px) {
+  .calendar {
+    width: 95vw;          /* plus large */
+    max-width: none;      /* supprime la limite */
+    margin: 0 auto;
+   perspective: 1000px;
+  }
+}
+
 .card {
   position: relative;
   width: 100%;
